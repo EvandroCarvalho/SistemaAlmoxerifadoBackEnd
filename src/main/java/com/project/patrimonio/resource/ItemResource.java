@@ -8,11 +8,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.sql.SQLException;
 import java.util.List;
 
 @RestController
-//@CrossOrigin("${origin-permission}")
+@CrossOrigin
 public class ItemResource {
     @Autowired //injeção de dependencias
     private ItemRepository itemRepository;
@@ -37,5 +36,6 @@ public class ItemResource {
         }
          return new ResponseEntity(HttpStatus.OK);
     }
+
 
 }

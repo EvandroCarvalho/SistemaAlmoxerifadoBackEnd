@@ -1,6 +1,7 @@
 package com.project.patrimonio.model;
 
 import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
